@@ -1,0 +1,291 @@
+{
+  "meshes": 25,
+  "materials": 25,
+  "triangles": 1605632,
+  "vertices": 811801,
+  "textures": [
+    {
+      "name": "Background_0_0_color",
+      "size": [
+        512,
+        512
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Background_0_1_color",
+      "size": [
+        512,
+        512
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Background_0_2_color",
+      "size": [
+        512,
+        512
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Background_0_3_color",
+      "size": [
+        512,
+        512
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Background_0_4_color",
+      "size": [
+        512,
+        512
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Background_1_0_color",
+      "size": [
+        512,
+        512
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Background_1_4_color",
+      "size": [
+        512,
+        512
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Background_2_0_color",
+      "size": [
+        512,
+        512
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Background_2_4_color",
+      "size": [
+        512,
+        512
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Background_3_0_color",
+      "size": [
+        512,
+        512
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Background_3_4_color",
+      "size": [
+        512,
+        512
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Background_4_0_color",
+      "size": [
+        512,
+        512
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Background_4_1_color",
+      "size": [
+        512,
+        512
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Background_4_2_color",
+      "size": [
+        512,
+        512
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Background_4_3_color",
+      "size": [
+        512,
+        512
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Background_4_4_color",
+      "size": [
+        512,
+        512
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Hero_2_1_normal",
+      "size": [
+        2048,
+        2048
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Hero_2_1_color",
+      "size": [
+        2048,
+        2048
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Hero_2_2_normal",
+      "size": [
+        2048,
+        2048
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Hero_2_2_color",
+      "size": [
+        2048,
+        2048
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Hero_2_3_normal",
+      "size": [
+        2048,
+        2048
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Hero_2_3_color",
+      "size": [
+        2048,
+        2048
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Midground_1_1_normal",
+      "size": [
+        1024,
+        1024
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Midground_1_1_color",
+      "size": [
+        1024,
+        1024
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Midground_1_2_normal",
+      "size": [
+        1024,
+        1024
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Midground_1_2_color",
+      "size": [
+        1024,
+        1024
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Midground_1_3_normal",
+      "size": [
+        1024,
+        1024
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Midground_1_3_color",
+      "size": [
+        1024,
+        1024
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Midground_3_1_normal",
+      "size": [
+        1024,
+        1024
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Midground_3_1_color",
+      "size": [
+        1024,
+        1024
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Midground_3_2_normal",
+      "size": [
+        1024,
+        1024
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Midground_3_2_color",
+      "size": [
+        1024,
+        1024
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Midground_3_3_normal",
+      "size": [
+        1024,
+        1024
+      ],
+      "mime": "image/webp"
+    },
+    {
+      "name": "Midground_3_3_color",
+      "size": [
+        1024,
+        1024
+      ],
+      "mime": "image/webp"
+    }
+  ],
+  "rgba8MipMiB": 213.33333333333343,
+  "extensions": [
+    "EXT_meshopt_compression",
+    "EXT_texture_webp",
+    "KHR_mesh_quantization"
+  ],
+  "hashes": {
+    "exports/snow_mountain_world.glb": "479e1f6035c34d2ecebbc9a3dc9452d7eba43b972fe5d596a25c769ca7b85410",
+    "snow-mountain-web/public/models/snow_mountain_world.glb": "479e1f6035c34d2ecebbc9a3dc9452d7eba43b972fe5d596a25c769ca7b85410",
+    "snow-mountain-web/dist/models/snow_mountain_world.glb": "479e1f6035c34d2ecebbc9a3dc9452d7eba43b972fe5d596a25c769ca7b85410"
+  }
+}

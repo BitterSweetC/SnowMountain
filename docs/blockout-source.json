@@ -1,0 +1,14 @@
+{
+  "blender": "5.2.2 LTS",
+  "frames": 1561,
+  "duration": 52,
+  "minimum_analytic_vertical_clearance_m": 116.6736262056836,
+  "objects": 30,
+  "triangles": 56448,
+  "texture_sizes": [
+    [
+      128,
+      128
+    ]
+  ]
+}
