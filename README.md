@@ -1,34 +1,34 @@
-# SNOWLINE · 雪线山间绘本
+# SNOWLINE · An Illustrated Alpine Journey
 
-交互式 Three.js 雪山网页，支持自由环绕、缩放和约 52 秒的山脊飞行。
+An interactive Three.js mountain landscape with free orbit, zoom, and a 52-second flight along the ridgeline.
 
-## 本地运行
+## Run locally
 
-需要 Node.js 20.19+（或 Vite 支持的新版本）。在仓库根目录执行：
+Requires Node.js 20.19+ or a newer version supported by Vite. From the repository root:
 
 ```bash
 npm ci
 npm run dev
 ```
 
-打开终端显示的本地地址。开始飞行后支持暂停、重播和返回自由观察。空格播放／暂停，Esc 返回，M 切换声音。
+Open the local address printed in the terminal. Flight controls include pause, replay, and return to free roam. Press Space to play or pause, Esc to return, and M to toggle sound.
 
-## 构建与部署
+## Build and deploy
 
 ```bash
 npm run build
 npm run preview
 ```
 
-将生成的 `dist/` 上传至静态网页托管服务即可。相对资源路径支持子目录部署；请通过 HTTP 服务访问，不要直接双击 HTML。
+Upload the generated `dist/` directory to a static web host. Relative asset paths support deployment under a subdirectory. Serve the site over HTTP rather than opening the HTML file directly.
 
-## 文件
+## Files
 
-- `src/`：场景、材质、镜头、音效、界面和样式。
-- `public/models/snow_mountain_world.glb`：网页必需的优化模型，包含相机及飞行动画。
-- `public/environment/`：网页必需的绘制天空及岩石纹理，由项目使用 AI 图像工具生成。
-- `index.html`、`vite.config.js`、`package.json`、`package-lock.json`：网页入口与可复现构建配置。
+- `src/`: scene, materials, camera, audio, interface, and styles.
+- `public/models/snow_mountain_world.glb`: optimized runtime model, including cameras and flight animation.
+- `public/environment/`: required painted sky and rock textures, generated for this project with AI image tools.
+- `index.html`, `vite.config.js`, `package.json`, and `package-lock.json`: entry point and reproducible build configuration.
 
-运行依赖为 Three.js，构建工具为 Vite。模型的 Meshopt 解码器随 Three.js 打包；资源全部本地交付，不依赖 CDN。音效在浏览器内合成。
+Three.js is the runtime dependency and Vite is the build tool. The Meshopt decoder is bundled with Three.js. All runtime assets are included locally; no CDN is required. Audio is synthesized in the browser.
 
-本分支仅保留网页交付内容，不包含 Blender 工程、制作脚本、参考视频、源贴图、截图报告或技能目录。
+This branch contains only the web application. Blender projects, authoring scripts, reference videos, source textures, screenshot reports, and skill directories are excluded.

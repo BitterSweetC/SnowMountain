@@ -23,7 +23,7 @@ const chapters=[
  ['04 / INTO THE VALLEY','Into the Indigo Couloir','04 / INDIGO COULOIR <i>·</i> COLD SHADOWED SNOW HOLDS THE STILLNESS OF THE RANGE'],
  ['05 / A WIDER WORLD','A Choir of Silent Peaks','05 / BEYOND THE HORIZON <i>·</i> DISTANT RIDGES DRIFT IN MIST LIKE AN UNBROKEN DREAM']
 ];
-function syncAudioUI(){const on=audio.enabled;$('#audio-toggle')?.setAttribute('aria-pressed',String(on));if($('#audio-label'))$('#audio-label').textContent=on?'山间回响 · 开':'山间回响 · 寂';const vol=$('#audio-volume');if(vol){const pct=on?Math.round(audio.volume*100):0;vol.value=String(pct);vol.title=`音量 ${pct}%`;}}
+function syncAudioUI(){const on=audio.enabled;$('#audio-toggle')?.setAttribute('aria-pressed',String(on));if($('#audio-label'))$('#audio-label').textContent=on?'SOUND · ON':'SOUND · OFF';const vol=$('#audio-volume');if(vol){const pct=on?Math.round(audio.volume*100):0;vol.value=String(pct);vol.title=`Volume ${pct}%`;}}
 function unlockAudio(){if(audio.enabled&&!audio.started)audio.start();}
 addEventListener('pointerdown',unlockAudio,{passive:true});
 function resize(){const w=holder.clientWidth,h=holder.clientHeight;renderer.setSize(w,h,false);controller?.resize(w,h);active.aspect=w/h;active.updateProjectionMatrix();}

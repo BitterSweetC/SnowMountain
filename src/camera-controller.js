@@ -3,7 +3,7 @@ import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 export class CameraController{
  constructor(model,clips,canvas,onState){
   this.model=model;this.onState=onState;const original=model.getObjectByName('Web_Default_Camera');this.fpv=model.getObjectByName('FPV_Camera');this.clip=clips.find(c=>c.name==='FPV_Flight');
-  if(!original?.isCamera||!this.fpv?.isCamera||!this.clip)throw new Error('场景缺少默认相机、飞行相机或 FPV_Flight 动画。');
+  if(!original?.isCamera||!this.fpv?.isCamera||!this.clip)throw new Error('The scene is missing its default camera, flight camera, or FPV_Flight animation.');
   this.fpvBaseFov=this.fpv.fov;
   model.updateMatrixWorld(true);this.free=original.clone();this.free.position.set(8900,3605,2064);this.active=this.free;
   this.controls=new OrbitControls(this.free,canvas);this.controls.target.set(200,1750,-650);this.controls.enableDamping=true;this.controls.enablePan=false;this.controls.dampingFactor=.07;this.controls.minDistance=3300;this.controls.maxDistance=9300;this.controls.minPolarAngle=.22;this.controls.maxPolarAngle=1.42;this.controls.update();this.controls.saveState();
