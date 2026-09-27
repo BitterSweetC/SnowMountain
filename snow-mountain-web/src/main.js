@@ -27,7 +27,9 @@ $('#play').onclick=()=>{unlockAudio();controller?.play();};$('#return').onclick=
 $('#audio-toggle').onclick=e=>{e.stopPropagation();audio.toggle();syncAudioUI();};
 $('#audio-volume')?.addEventListener('input',e=>{e.stopPropagation();audio.setVolume(Number(e.target.value)/100);syncAudioUI();});
 $('#about-button').onclick=()=>{$('#about').hidden=!$('#about').hidden;};$('#close-about').onclick=()=>{$('#about').hidden=true;};
-$('#route-toggle').onclick=()=>{const map=$('#route-map');const hidden=map.toggleAttribute('hidden');$('#route-toggle').textContent=hidden?'+':'−';$('#route-toggle').setAttribute('aria-expanded',String(!hidden));};
+function setRouteCollapsed(collapsed){const map=$('#route-map'),card=$('.route-card'),btn=$('#route-toggle');if(!map||!btn)return;map.hidden=collapsed;card?.classList.toggle('is-collapsed',collapsed);btn.textContent=collapsed?'+':'−';btn.setAttribute('aria-expanded',String(!collapsed));}
+$('#route-toggle').onclick=()=>{const map=$('#route-map');setRouteCollapsed(!map.hidden);};
+const narrowMq=matchMedia('(max-width: 900px)');setRouteCollapsed(narrowMq.matches);narrowMq.addEventListener('change',e=>setRouteCollapsed(e.matches));
 $('#quality').onchange=e=>{world.quality(e.target.value);resize();};$('#retry').onclick=()=>location.reload();
 $('#fullscreen').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen();}catch{$('#fullscreen').title='Fullscreen not supported';}};
 addEventListener('keydown',e=>{unlockAudio();if(/INPUT|SELECT|BUTTON/.test(e.target.tagName))return;if(e.code==='Space'){e.preventDefault();controller?.mode==='free'?controller?.play():controller?.pause();}if(e.code==='KeyM'){audio.toggle();syncAudioUI();}if(e.code==='Escape'){controller?.returnFree();$('#about').hidden=true;}});
