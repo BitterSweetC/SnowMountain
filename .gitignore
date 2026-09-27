@@ -1,12 +1,8 @@
-# Dependencies & build output
 node_modules/
-snow-mountain-web/node_modules/
-snow-mountain-web/dist/
+dist/
 .DS_Store
-
-# Large reference video & raw intermediate Blender/GLB builds (>25MB; regenerated via scripts/build_world.py)
-*.mp4
-blender/*.blend
-blender/*.blend1
-exports/*.glb
-revisions/
+.idea/
+*.log
+.env
+.env.*
+!.env.example
